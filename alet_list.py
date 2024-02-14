@@ -11,3 +11,7 @@ things.sort(reverse=True)
 things.sort()
 
 things.reverse()
+
+# I can use range inside list to create a list of numbers - 1 to 5
+numbers = list(range(1, 6))
+print(numbers)
