@@ -16,3 +16,9 @@ elif alien_0['speed'] == 'medium':
 else:
     # This must be a fast alien.
     x_increment = 3
+
+alien_0 = {'color': 'green', 'points': 5}
+
+# how to delete a key-value pair
+del alien_0['points']
+print(alien_0)
