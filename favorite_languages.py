@@ -33,3 +33,16 @@ for name in favorite_languages.keys():
     # Using keys() method to check if a key is in a dict - not only used for loops
     if 'erin' not in favorite_languages.keys():
         print("Erin, please take our poll!")
+        
+for name in sorted(favorite_languages.keys()):
+    print(f"{name.title()}, thank you for taking the poll.")
+    
+print("The following languages have been mentioned:")
+
+# Loop to print values of dict using values method
+for language in favorite_languages.values():
+    print(language.title())
+    
+# Loop to print values of dict using set - a set get just unique values
+for language in set(favorite_languages.values()):
+    print(language.title())
