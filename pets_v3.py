@@ -42,4 +42,4 @@ def describe_pet(animal_type, pet_name):
 # describe_pet()
 
 # More arguments than parameters specified at the function definition
-describe_pet('willie', 'hamster', 'lucy')
+# describe_pet('willie', 'hamster', 'lucy')

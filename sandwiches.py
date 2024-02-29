@@ -12,7 +12,7 @@ def make_sandwich(*items):
     for item in items:
         print("- " + item.title())
 
-make_sandwich('bread', 'cheese', 'tomato')
-make_sandwich('bread', 'ham', 'lettuce', 'tomato')
-make_sandwich('bread', 'cheese', 'tomato', 'onion')
+# make_sandwich('bread', 'cheese', 'tomato')
+# make_sandwich('bread', 'ham', 'lettuce', 'tomato')
+# make_sandwich('bread', 'cheese', 'tomato', 'onion')
         

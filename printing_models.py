@@ -17,12 +17,12 @@ def show_completed_models(completed_models):
         print(completed_model)
 
 # # Begin with some unprinted designs: 
-unprinted_designs = ['iphone case', 'robot pendant', 'dodecahedron']
-completed_models = []
+# unprinted_designs = ['iphone case', 'robot pendant', 'dodecahedron']
+# completed_models = []
 
 # print_models(unprinted_designs, completed_models)
-print_models(unprinted_designs[:], completed_models) # If I want to keep the original list, I need to pass a copy of the list to the function.
-show_completed_models(completed_models)
+# print_models(unprinted_designs[:], completed_models) # If I want to keep the original list, I need to pass a copy of the list to the function.
+# show_completed_models(completed_models)
 
 
 # # Simulate printing each design, until none are left. 

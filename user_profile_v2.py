@@ -7,7 +7,7 @@ def build_profile(first, last, **user_info):
         profile[key] = value
     return profile
 
-user_profile = build_profile('alef', 'pereira',
-                             location='eloi mendes',
-                             field='cs')
-print(user_profile)
+# user_profile = build_profile('alef', 'pereira',
+#                              location='eloi mendes',
+#                              field='cs')
+# print(user_profile)
