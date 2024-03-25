@@ -22,7 +22,7 @@ def fib_iter(n):
     """
     res = n
     a, b = 0, 1
-    for k in range(2, n+1):
+    for _ in range(2, n+1):
         res = a + b
         a, b = b, res
     return res

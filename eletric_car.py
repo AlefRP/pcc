@@ -40,6 +40,12 @@ class Battery:
     def describe_battery(self):
         """Print a statement describing the battery size."""
         print(f"This car has a {self.battery_size}-kWh battery.")
+    
+    def upgrade_battery(self):
+        """Upgrade the battery if possible."""
+        if self.battery_size == 40:
+            self.battery_size = 65
+            print("Upgraded the battery to 65 kWh.")
         
     def get_range(self):    
         """Print a statement about the range this battery provides."""
@@ -74,3 +80,5 @@ print(my_leaf.get_descriptive_name())
 my_leaf.battery.describe_battery() # Subscring to the child method
 my_leaf.battery.get_range() # Subscring to the child method
 my_leaf.fill_gas_tank()
+my_leaf.battery.upgrade_battery()
+my_leaf.battery.get_range()

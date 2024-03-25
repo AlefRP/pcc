@@ -38,33 +38,10 @@ class IceCreamStand(Restaurant):
         """
         Display the flavors of ice cream.
         """
-        print(f"The flavors of ice cream are: {self.flavors}")
+        print(f"The flavors available are: ")
+        for flavor in self.flavors:
+            print(f"- {flavor}")
 
-# restaurant = Restaurant("The Pizza Palace", "Pizza")
-
-# print(restaurant.name)
-# print(restaurant.cuisine_type)
-
-# restaurant.describe_restaurant()
-# restaurant.open_restaurant()
-
-# restaurant_1 = Restaurant("The Kebab Palace", "Kebab")
-# restaurant_2 = Restaurant("The Burger Palace", "Burger")
-# restaurant_3 = Restaurant("The Fish Palace", "Fish")
-
-# restaurant_1.describe_restaurant()
-# restaurant_2.describe_restaurant()
-# restaurant_3.describe_restaurant()
-
-restaurant = Restaurant("The Pizza Palace", "Pizza")
-ice_rio = IceCreamStand("Ice Rio", "Ice Cream")
-
+ice_rio = IceCreamStand("Ice Rio", "Ice Cream", ["Chocolate", "Strawberry", "Vanilla"])
 ice_rio.display_flavors()
 
-print(restaurant.number_served)
-# restaurant.number_served = 10
-restaurant.set_number_served(10)
-
-print(restaurant.number_served)
-
-restaurant.increment_number_served(5)
