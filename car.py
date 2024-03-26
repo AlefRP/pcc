@@ -1,14 +1,33 @@
-def make_car(manufacturer, model, **car_info):
-    """
-    A function to create a car with the given manufacturer, model, and additional car information.
-    :param manufacturer: the manufacturer of the car
-    :param model: the model of the car
-    :param car_info: additional information about the car (kwargs)
-    :return: a dictionary containing the car information
-    """
-    """"""
-    car_info['manufacturer'] = manufacturer
-    car_info['model'] = model
-    return car_info
+"""Class that represents a car."""
+class Car:
+    """ Simple try of representing a car. """
 
-make_car('Toyota', 'Camry', color='red', year=2020)
+    def __init__(self, make, model, year):
+        """ Initialize attributes to describe a car. """
+        self.make = make
+        self.model = model
+        self.year = year
+        self.odometer_reading = 0
+
+    def get_descriptive_name(self):
+        """ Return a neatly formatted descriptive name. """
+        long_name = f"{self.year} {self.make} {self.model}"
+        return long_name.title()
+    
+    def read_odometer(self):
+        """ Print a statement showing the car's mileage. """
+        print(f"This car has {self.odometer_reading} miles on it.")
+        
+    def update_odometer(self, mileage):
+        """
+        Set the odometer reading to the given value.
+        Reject the change if it attempts to roll the odometer back.
+        """
+        if mileage >= self.odometer_reading:
+            self.odometer_reading = mileage
+        else:
+            print("You can't roll back an odometer!")
+            
+    def increment_odometer(self, miles):
+        """ Add the given amount to the odometer reading. """
+        self.odometer_reading += miles
