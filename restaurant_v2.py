@@ -1,3 +1,8 @@
+from rest import Restaurant
+
+restaurante = Restaurant("The Pizza Palace", "Pizza")
+restaurante.describe_restaurant()
+
 restaurante_places = input("How many places do you want to sit? ")
 restaurante_places = int(restaurante_places)
 

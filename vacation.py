@@ -2,6 +2,7 @@ prompt_name = "Whats your name? "
 prompt = "\nIf you could travel anywhere, where would you go? "
 
 travels = {}
+
 ##############################################################
 ### To modify lists or dicts its better to use while loops ###
 ##############################################################
