@@ -1,0 +1,3 @@
+With python we can use dicts
+With python we can use loops
+With python we can use OOP
